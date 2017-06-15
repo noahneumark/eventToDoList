@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F82ED6F01EA938FF007CD6BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ED6EF1EA938FF007CD6BA /* AppDelegate.swift */; };
-		F82ED6F21EA938FF007CD6BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ED6F11EA938FF007CD6BA /* ViewController.swift */; };
+		F82ED6F21EA938FF007CD6BA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ED6F11EA938FF007CD6BA /* DetailViewController.swift */; };
 		F82ED6F51EA938FF007CD6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82ED6F31EA938FF007CD6BA /* Main.storyboard */; };
 		F82ED6F81EA938FF007CD6BA /* eventsOpD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F82ED6F61EA938FF007CD6BA /* eventsOpD.xcdatamodeld */; };
 		F82ED6FA1EA938FF007CD6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82ED6F91EA938FF007CD6BA /* Assets.xcassets */; };
 		F82ED6FD1EA938FF007CD6BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82ED6FB1EA938FF007CD6BA /* LaunchScreen.storyboard */; };
+		F82ED7051EA93945007CD6BA /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ED7041EA93945007CD6BA /* EventTableViewController.swift */; };
+		F82ED7071EA94080007CD6BA /* addEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ED7061EA94080007CD6BA /* addEventDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F82ED6EC1EA938FF007CD6BA /* eventsOpD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventsOpD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82ED6EF1EA938FF007CD6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F82ED6F11EA938FF007CD6BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F82ED6F11EA938FF007CD6BA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F82ED6F41EA938FF007CD6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F82ED6F71EA938FF007CD6BA /* eventsOpD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eventsOpD.xcdatamodel; sourceTree = "<group>"; };
 		F82ED6F91EA938FF007CD6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F82ED6FC1EA938FF007CD6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F82ED6FE1EA938FF007CD6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82ED7041EA93945007CD6BA /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		F82ED7061EA94080007CD6BA /* addEventDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addEventDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				F82ED6EF1EA938FF007CD6BA /* AppDelegate.swift */,
-				F82ED6F11EA938FF007CD6BA /* ViewController.swift */,
+				F82ED6F11EA938FF007CD6BA /* DetailViewController.swift */,
+				F82ED7061EA94080007CD6BA /* addEventDelegate.swift */,
 				F82ED6F31EA938FF007CD6BA /* Main.storyboard */,
+				F82ED7041EA93945007CD6BA /* EventTableViewController.swift */,
 				F82ED6F91EA938FF007CD6BA /* Assets.xcassets */,
 				F82ED6FB1EA938FF007CD6BA /* LaunchScreen.storyboard */,
 				F82ED6FE1EA938FF007CD6BA /* Info.plist */,
@@ -99,6 +105,7 @@
 				TargetAttributes = {
 					F82ED6EB1EA938FF007CD6BA = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = LVRN76KSS3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F82ED6F81EA938FF007CD6BA /* eventsOpD.xcdatamodeld in Sources */,
-				F82ED6F21EA938FF007CD6BA /* ViewController.swift in Sources */,
+				F82ED7071EA94080007CD6BA /* addEventDelegate.swift in Sources */,
+				F82ED6F21EA938FF007CD6BA /* DetailViewController.swift in Sources */,
+				F82ED7051EA93945007CD6BA /* EventTableViewController.swift in Sources */,
 				F82ED6F01EA938FF007CD6BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LVRN76KSS3;
 				INFOPLIST_FILE = eventsOpD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dojo.eventsOpD;
@@ -278,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LVRN76KSS3;
 				INFOPLIST_FILE = eventsOpD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dojo.eventsOpD;
