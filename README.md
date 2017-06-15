@@ -1,0 +1,2 @@
+# eventToDoList
+IOS app built in Swift 3.0 that lets a user enter to do items into a list, and then send them to the "completed" list when the task has been completed.  Items are sorted by date, and when clicked they move to the other list.  Hitting the "+" symbol brings you to the screen for entering a new event.  Swiping left on an item reveals an "edit" and "delete" button.  Clicking edit brings you to the edit page, where the user can modify the event. Stores entries into CoreData for persistent data.
